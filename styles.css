@@ -1,7 +1,7 @@
 :root {
 	--main-color: #9295cd;
 	--secondary-color: #4f4484;
-	--background-color: #03060f;
+	--background-color: rgba(3, 6, 15, 0.8);
 }
 
 * {
