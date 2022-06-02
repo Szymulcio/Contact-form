@@ -1,0 +1,15 @@
+Do zakodowania formularz:
+
+- Potrzebne materiały w załączniku
+- 510x506 px
+- main color: #9295cd
+- secondary color: #4f4484
+- bg color: #03060f (krycie 60%)
+- bg image: https://unsplash.com/photos/rCbdp8VCYhQ (na całe okno przeglądarki)
+- font: Open Sans Light / Semi Bold / Regular
+- plik jest również przesłany w formacie psd. Darmowo można go otworzyć na https://www.photopea.com/ i sprawdzić wszystkie wymiary, kolory itd. 
+- formularz musi być responsywny 
+
+- walidacja: oba pola obowiązkowe, po najechaniu na zgodę (text + box) pojawia się dymek z informacją że zgoda jest obowiązkowa. Po kliknięciu w button, wyślij , jeśli któryś z inputów / chexkbox są niewypełnione zmieniają kolor na #aa53c3, jeśli wszystko jest wypełnione form znika I pojawia się thank you page (takie same tło + bg + kolorystyka) z napisem “dziękujemy za wypełnienie formularza //pobrane imię// , potwierdź że Twój email to //pobrany email// klikając poniższy przycisk” poniżej button ("Potwierdź") podlinkowany do https://www.salesmanago.pl/
+
+rgb(3, 6, 15)
