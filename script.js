@@ -31,7 +31,7 @@ nameInput.addEventListener("blur", function () {
 	}
 });
 
-submitButton.addEventListener("click", function (e) {
+submitButton.addEventListener("click", function () {
 	let allAreFilled = true;
 
 	form.querySelectorAll("[required]").forEach(function (input) {
@@ -50,7 +50,7 @@ submitButton.addEventListener("click", function (e) {
 	}
 
 	let html = `<p class="card__message">Dziękujemy za wypełnienie formularza ${nameInput.value}, potwierdź że Twój email to
-	<span>${emailInput.value}</span>
+	<span>${emailInput.value}</span>,
 	klikając poniższy przycisk</p>
 	<a class='btn btn--confirm' href="https://www.salesmanago.pl/">Potwierdź</a>`;
 

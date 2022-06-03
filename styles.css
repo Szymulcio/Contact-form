@@ -21,29 +21,27 @@ body {
 	min-height: 506px;
 	max-width: 510px;
 	margin: 2rem auto;
-	/* background: var(--background-color); */
 	background: rgba(3, 6, 15, 0.8);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
-	line-height: 1;
+	line-height: 1.2;
 }
 
 .card__greeting {
 	margin: 2rem 0 0;
 	font-size: 2.25rem;
 	font-weight: 600;
+	line-height: 1;
 }
 
 .card__text {
 	width: 100%;
-	padding: 0 1.5rem;
 	margin: 1.25rem 0;
+	padding: 0 1.5rem;
 	text-align: center;
 	font-size: 1.5rem;
 	font-weight: 400;
-	line-height: 1.2;
 }
 
 .card__message {
@@ -52,7 +50,6 @@ body {
 	padding: 0 1.5rem;
 	text-align: center;
 	font-size: 1.5rem;
-	line-height: 1.2;
 }
 
 .card__message span {
@@ -61,17 +58,17 @@ body {
 }
 
 .card__text span {
-	color: var(--secondary-color);
 	display: block;
+	color: var(--secondary-color);
 	font-weight: 600;
 }
 
 .contest-form {
+	width: 100%;
+	padding: 0 1.25rem;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	padding: 0 1.25rem;
 	gap: 2rem;
 }
 
@@ -81,8 +78,8 @@ body {
 }
 
 .contest-form__input label {
-	font-size: 1.5rem;
 	padding-bottom: 1rem;
+	font-size: 1.5rem;
 }
 
 .contest-form__input label[for="email"] {
@@ -97,10 +94,10 @@ body {
 
 .contest-form__input input {
 	font-size: 24px;
+	background: rgba(0, 0, 0, 0);
 	border: none;
 	border-bottom: solid 3px var(--main-color);
 	color: var(--main-color);
-	background: rgba(0, 0, 0, 0);
 }
 
 .contest-form__input input {
@@ -129,17 +126,17 @@ body {
 .contest-form__checkbox input[type="checkbox"] {
 	position: relative;
 	appearance: none;
-	margin: 0;
 	width: 40px;
 	height: 40px;
+	margin: 0;
 	border: 2px solid #9295cd;
 }
 
 .contest-form__checkbox input[type="checkbox"]:checked::before {
+	position: absolute;
 	content: "";
 	width: 15px;
 	height: 3px;
-	position: absolute;
 	background-color: var(--main-color);
 	border-radius: 1px;
 	transform-origin: left;
@@ -161,7 +158,6 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	margin-left: 0.5rem;
-	line-height: 1.2;
 	text-align: justify;
 }
 
@@ -169,16 +165,16 @@ body {
 	background-color: var(--main-color);
 	width: 181px;
 	height: 58px;
+	margin: auto auto 2rem;
+	border: none;
 	font-size: 1.875rem;
 	color: #312d5a;
 	cursor: pointer;
-	margin: auto auto 2rem;
-	border: none;
 }
 
 .btn--confirm {
+	margin: auto;
+	padding-top: 14px;
 	text-decoration: none;
 	text-align: center;
-	padding-top: 14px;
-	margin: auto;
 }
