@@ -11,5 +11,3 @@ Do zakodowania formularz:
 - formularz musi być responsywny 
 
 - walidacja: oba pola obowiązkowe, po najechaniu na zgodę (text + box) pojawia się dymek z informacją że zgoda jest obowiązkowa. Po kliknięciu w button, wyślij , jeśli któryś z inputów / chexkbox są niewypełnione zmieniają kolor na #aa53c3, jeśli wszystko jest wypełnione form znika I pojawia się thank you page (takie same tło + bg + kolorystyka) z napisem “dziękujemy za wypełnienie formularza //pobrane imię// , potwierdź że Twój email to //pobrany email// klikając poniższy przycisk” poniżej button ("Potwierdź") podlinkowany do https://www.salesmanago.pl/
-
-rgb(3, 6, 15)

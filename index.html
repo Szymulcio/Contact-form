@@ -17,21 +17,20 @@
     <main class="card">
         <h1 class="card__greeting">WITAJ!</h1>
         <P class="card__text">WYPEŁNIJ FORMULARZ I ZGARNIJ <span> KUPON RABATOWY</span> DO WYKORZYSTANIA PRZY NAJBLIŻSZYCH ZAKUPACH</P>
-        <form class="contest-form">
+        <form class="contest-form" action="data-submission">
             <div class="contest-form__input">
                 <label for="email">EMAIL</label>
-                <input type="text" name="" id="email" required>
+                <input type="email" name="email" id="email" required />
                 <label for="name">IMIĘ</label>
-                <input type="text" name="" id="name" required>
+                <input type="text" name="name" id="name" required />
             </div>
             <div class="contest-form__checkbox">
                 <input type="checkbox" id="agree-terms" required>
-                <label for="contest-form__terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                <label for="agree-terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </label>
             </div>
-            <input class='btn' type="submit" value="WYŚLIJ">
-            <a href="https://www.salesmanago.pl/"></a>
+            <input class='btn' type="submit" value="WYŚLIJ" />
         </form>
     </main>
 </body>

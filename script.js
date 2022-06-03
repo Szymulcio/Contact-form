@@ -12,43 +12,48 @@ const nameLabel = document.querySelector('label[for="name"]');
 const agreeTerms = document.querySelector(".contest-form__checkbox");
 
 emailInput.addEventListener("focus", function () {
-	emailLabel.style.zIndex = "-1";
+	emailLabel.style.opacity = "0";
 });
 
 emailInput.addEventListener("blur", function () {
-	if (emailInput.value === "") emailLabel.style.zIndex = "1";
+	if (emailInput.value === "") {
+		emailLabel.style.opacity = "1";
+	}
 });
 
 nameInput.addEventListener("focus", function () {
-	nameLabel.style.zIndex = "-1";
+	nameLabel.style.opacity = "0";
 });
 
 nameInput.addEventListener("blur", function () {
-	if (nameInput.value === "") nameLabel.style.zIndex = "1";
+	if (nameInput.value === "") {
+		nameLabel.style.opacity = "1";
+	}
 });
 
 submitButton.addEventListener("click", function (e) {
-	e.preventDefault();
 	let allAreFilled = true;
 
 	form.querySelectorAll("[required]").forEach(function (input) {
-		if (!allAreFilled) return;
 		if (!input.validity.valid) {
 			allAreFilled = false;
+			document.querySelector(`label[for='${input.id}']`) &&
+				(document.querySelector(`label[for='${input.id}']`).style.color = "#aa53c3");
+			input.style.borderColor = "#aa53c3";
+			input.style.color = "#aa53c3";
 			return;
 		}
 	});
-	console.log(allAreFilled);
 
 	if (!allAreFilled) {
 		return;
 	}
 
-	let html = `<p class="card__message">Dziękujemy za wypełnienie formularza ${nameInput.value}, potwierdź że Twój email to <span>${emailInput.value}</span> klikając poniższy przycisk</p>
+	let html = `<p class="card__message">Dziękujemy za wypełnienie formularza ${nameInput.value}, potwierdź że Twój email to
+	<span>${emailInput.value}</span>
+	klikając poniższy przycisk</p>
 	<a class='btn btn--confirm' href="https://www.salesmanago.pl/">Potwierdź</a>`;
 
 	mainContent.innerHTML = "";
 	mainContent.insertAdjacentHTML("afterbegin", html);
 });
-
-// agreeTerms.addEventListener("hover");
