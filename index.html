@@ -142,6 +142,26 @@
         /* //////////////////////// */
         /* Checkbox */
 
+        [data-tooltip]:before {
+            content: attr(data-tooltip);
+            position: absolute;
+            opacity: 0;
+
+            padding: 0.5rem;
+            color: #312d5a;
+            transition: all 0.55s ease-in-out;
+            pointer-events: none;
+        }
+
+        [data-tooltip]:hover:before {
+            opacity: 1;
+
+            background-color: var(--main-color);
+            margin-top: -50px;
+        }
+
+        [data-tooltip]:before {}
+
         .contest-form__checkbox {
             display: grid;
             grid-template-columns: max-content auto;
@@ -154,6 +174,7 @@
             height: 40px;
             margin: 0;
             border: 2px solid #9295cd;
+
         }
 
         .contest-form__checkbox input[type="checkbox"]:checked::before {
@@ -176,6 +197,7 @@
             border-radius: 1px;
             transform-origin: right;
             transform: translate(6px, 6px) rotate(-50deg);
+
         }
 
         .contest-form__checkbox label {
@@ -220,7 +242,7 @@
                 <label for="name">IMIĘ</label>
                 <input type="text" name="name" id="name" required />
             </div>
-            <div class="contest-form__checkbox">
+            <div class="contest-form__checkbox" data-tooltip="Wyrażenie zgody jest obowiązkowe">
                 <input type="checkbox" id="agree-terms" required>
                 <label for="agree-terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
